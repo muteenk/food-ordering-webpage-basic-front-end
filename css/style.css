@@ -1,5 +1,7 @@
 
-/*CSS RESET*/
+/-----------------
+*CSS RESET*
+------------------/
 
 *{
     margin: 0px;
@@ -8,7 +10,9 @@
     scroll-behavior: smooth;
 }
 
-/*CSS VARIABLES*/
+/*--------------------
+CSS VARIABLES
+----------------------*/
 
 :root{
     --navbar-height: 59px;
