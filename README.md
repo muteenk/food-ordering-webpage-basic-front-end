@@ -1,3 +1,3 @@
-# food-ordering-webpage-basic-front-end
+# food-ordering-webpage-basic-frontend
 
-This is just basic front end
+just my stuff
