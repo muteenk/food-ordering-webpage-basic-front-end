@@ -1,3 +1,3 @@
-# food-ordering-webpage-basic-front-end
+# food-ordering-webpage-basic-frontend
 
-This is a front end template for food ordering website
+just my stuff
