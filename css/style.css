@@ -595,6 +595,92 @@ CSS VARIABLES
         color: #fff;
     }
 
+    /* ------------------------ FAQ ------------------------ */
+
+.faq
+{
+    width: 90%;
+    max-width: 1000px;
+    margin: 2em auto;
+}
+
+#faq h1 
+{
+    color: #fff;
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+
+.faq-item {
+    margin: 1rem 0;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+    width: 60%;
+    margin: 24px auto;
+    background: white;
+    padding: 7px 10px;
+    color: black;
+}
+
+.faq-item-header
+{
+    font-size: 1.5rem;
+    padding: 15px 3rem;
+    min-height: 3.5rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.faq-item-header::after
+{
+    content: '\002B';
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.faq-item-header.active::after
+{
+    transform: rotate(45deg);
+    color: #FF6EDF;
+}
+
+.faq-item-header.active
+{
+    transition: all 0.1s ease-in-out;
+    color: #002744;
+}
+
+.faq-item-header:hover{
+    outline: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.faq-item-body
+{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.faq-item-body-content
+{
+    border-top: 2px solid #94D2FF;
+    padding: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+.faq-item-body-content ul
+{
+    list-style-type: disc;
+    padding-left: 23px;
+}
+
 }
 
 
