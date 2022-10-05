@@ -99,7 +99,73 @@
         </div>
     </section>
 
+    <div id="faq" class="section-div"></div>
 
+    <section id="faq">
+        
+            <h1>
+                Frequently Asked Questions (FAQs)
+            </h1>
+            
+            <div class="faq-accordion">
+                
+                <div class="faq-item">
+                    <div class="faq-item-header">
+                        What is it?
+                    </div>
+                    <div class="faq-item-body">
+                        <div class="faq-item-body-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ex accusamus nemo vel exercitationem. Praesentium omnis blanditiis error culpa quos?
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-item-header">
+                        Why is it?
+                    </div>
+                    <div class="faq-item-body">
+                        <div class="faq-item-body-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ex accusamus nemo vel exercitationem. Praesentium omnis blanditiis error culpa quos?
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-item-header">
+                        How was it made
+                    </div>
+                    <div class="faq-item-body">
+                        <div class="faq-item-body-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ex accusamus nemo vel exercitationem. Praesentium omnis blanditiis error culpa quos?
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-item-header">
+                        What does it really do?
+                    </div>
+                    <div class="faq-item-body">
+                        <div class="faq-item-body-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ex accusamus nemo vel exercitationem. Praesentium omnis blanditiis error culpa quos?
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-item-header">
+                        What can do you think it'll do in the future?
+                    </div>
+                    <div class="faq-item-body">
+                        <div class="faq-item-body-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ex accusamus nemo vel exercitationem. Praesentium omnis blanditiis error culpa quos?
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
 
     <!-- CONTACT SECTION  -->
 
@@ -128,6 +194,28 @@
 
     </footer>
 
+
+    <script>
+        // Accordion
+
+        const faqItemHeaders = document.querySelectorAll(".faq-item-header")
+
+        faqItemHeaders.forEach(faqItemHeaders =>{
+            faqItemHeaders.addEventListener("click", event =>{
+                faqItemHeaders.classList.toggle("active")
+                const faqItemBody = faqItemHeaders.nextElementSibling
+                if(faqItemHeaders.classList.contains('active'))
+                {
+                    faqItemBody.style.maxHeight = faqItemBody.scrollHeight + "px"
+                }
+                else
+                {
+                    faqItemBody.style.maxHeight = 0
+                }
+            })
+})
+
+    </script>
 </body>
 
 </html>
